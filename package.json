@@ -1,0 +1,16 @@
+{
+  "name": "assignment-seach",
+  "version": "1.0.0",
+  "description": "This is sample project that shows search funcationality of use by country name.",
+  "main": "index.html",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "start index.html",
+    "prettier": "prettier --write \"*.js\" \"*.css\" \"*.html\""
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
+}
+

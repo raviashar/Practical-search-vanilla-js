@@ -1,0 +1,190 @@
+/* Reset CSS*/
+html {
+  display: block;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: regular;
+  color: #212529;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+/* Page CSS*/
+.wrapper {
+  padding: 16px;
+}
+
+.input-search_wrapper {
+  position: relative;
+  display: flex;
+  width: 241px;
+  margin-bottom: 24px;
+}
+
+.input-search {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #ffffff;
+  padding: 6px 12px 6px 12px;
+}
+
+.input-search:active,
+.input-search:focus {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+  outline: none;
+}
+
+.input-search:disabled {
+  background-color: rgb(233, 236, 239);
+}
+
+.span-shortcut_label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #959ba1;
+  border: 1px solid #dee2e6;
+  border-radius: 2px;
+  height: 24px;
+  line-height: 22px;
+  padding: 0 4px;
+}
+
+.table-users {
+  width: 100%;
+  max-width: 800px;
+  border-spacing: 0;
+  border: 1px solid #dee2e6;
+}
+
+.table-users th,
+.table-users td {
+  padding: 8px;
+  border-right: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.table-users th:not(:last-child),
+.table-users td:not(:last-child) {
+  border-right: 1px solid #dee2e6;
+}
+
+.table-users th {
+  background-color: #f3f3f3;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table-users td span {
+  top: -5px;
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.table-users tr:not(:last-child) td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.text-no-result {
+  display: none;
+}
+
+.pagination-limit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.input-pagination_limit {
+  height: 24px;
+  padding: 4px 8px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.input-pagination_limit:focus,
+.input-pagination_limit:active {
+  outline: none;
+  box-shadow: 0 0 0 3px #ced4da40;
+}
+
+.span-limit_error {
+  color: #ff2222;
+  display: none;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.api-error {
+  background-color: #f48585;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.icon-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.icon-close::after {
+  content: "\2715";
+  cursor: pointer;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
+.spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #7952b3;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

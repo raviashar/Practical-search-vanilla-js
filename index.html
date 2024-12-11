@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search user by Countries</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Search user by countries</h1>
+      <!-- Search Input -->
+      <div class="input-search_wrapper">
+        <input
+          class="input-search"
+          type="text"
+          id="search"
+          placeholder="Search places..."
+          autocomplete="off"
+        />
+        <span class="span-shortcut_label">Ctrl + /</span>
+      </div>
+
+      <!-- API Error -->
+      <div class="api-error" id="api-error">
+        <span class="icon-close" onclick="closeApiError()"></span>
+        <span>Something went wrong!! Please try again</span>
+      </div>
+
+      <!-- User List -->
+      <div id="result">
+        <div class="spinner" id="spinner-loader"></div>
+        <table class="table-users">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Place Name</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+
+      <!-- No Result -->
+      <div id="no-result" class="text-no-result">
+        <p>No results found</p>
+      </div>
+
+      <!-- Pagination and Item Limit -->
+      <div class="pagination-limit">
+        <div>
+          <label>Limit</label>
+          <input
+            type="number"
+            id="limit"
+            placeholder="Limit"
+            value="5"
+            class="input-pagination_limit"
+          />
+          <span class="span-limit_error" id="limit-error">
+            Limit should not be more than 10</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
